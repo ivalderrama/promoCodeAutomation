@@ -1,0 +1,14 @@
+cd /Users/sc4lp3r/Desktop/development/protractor/node_modules/jasmine-allure-reporter/allure-results/
+rm *.*
+cd ..
+rm -rf allure-results
+
+cp -r /Users/sc4lp3r/Desktop/development/protractor/allure-results /Users/sc4lp3r/Desktop/development/protractor/node_modules/jasmine-allure-reporter/
+
+cd /Users/sc4lp3r/Desktop/development/protractor/node_modules/jasmine-allure-reporter
+
+sudo mvn site -Dallure.results_pattern=allure-results
+
+cd /Users/sc4lp3r/Desktop/development/protractor/node_modules/jasmine-allure-reporter/target/site/allure-maven-plugin
+
+open -a "firefox" index.html
