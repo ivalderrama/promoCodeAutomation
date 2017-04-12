@@ -142,7 +142,7 @@ describe("Liv-23. Promocode is dependent on user subscription date, where user a
         //Login
         browser.get(config.liv_home_url);
         browser.sleep(1000);
-        element(by.css('body > div.modal.fade.in > div > div > div > div.modal-footer > div > div.col-xs-12.col-sm-6.skip-ctrl > span')).click();
+        $('body').sendKeys(protractor.Key.ESCAPE);
         browser.sleep(1000);
         element(by.className('icon-person')).click();
         element(by.name('email')).sendKeys(config.user02);

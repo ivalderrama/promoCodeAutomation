@@ -66,7 +66,7 @@ describe("Wow-24. Promocode is dependent on user subscription date, where user a
         element(by.id("valid-to")).sendKeys("30/09/2017");
 
         //Subscription date
-        element(by.id("signup_start_date")).sendKeys("11/03/2017");
+        element(by.id("signup_start_date")).sendKeys("28/02/2017");
         element(by.id("signup_end_date")).sendKeys("17/03/2017");
 
         //Save

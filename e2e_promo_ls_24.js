@@ -67,7 +67,7 @@ describe("Liv-24. Promocode is dependent on user subscription date, where user a
 
         //Subscription date
         element(by.id("signup_start_date")).sendKeys("11/03/2017");
-        element(by.id("signup_end_date")).sendKeys("13/03/2017");
+        element(by.id("signup_end_date")).sendKeys("07/04/2017");
 
         //Save
         element(by.id("ext-gen88")).click();
@@ -142,7 +142,7 @@ describe("Liv-24. Promocode is dependent on user subscription date, where user a
         //Login
         browser.get(config.liv_home_url);
         browser.sleep(1000);
-        element(by.css('body > div.modal.fade.in > div > div > div > div.modal-footer > div > div.col-xs-12.col-sm-6.skip-ctrl > span')).click();
+        $('body').sendKeys(protractor.Key.ESCAPE);
         browser.sleep(1000);
         element(by.className('icon-person')).click();
         element(by.name('email')).sendKeys(config.user02);

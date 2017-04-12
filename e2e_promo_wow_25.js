@@ -64,15 +64,15 @@ describe("Wow-25. Putting it all together to see its behaviour in combination, a
 
         //Total purchase value
         element(by.id("total_purchase_value_gt")).sendKeys("5");
-        element(by.id("total_purchase_value_lt")).sendKeys("10");
+        element(by.id("total_purchase_value_lt")).sendKeys("25");
 
         //Subscription date
-        element(by.id("signup_start_date")).sendKeys("11/03/2017");
+        element(by.id("signup_start_date")).sendKeys("28/02/2017");
         element(by.id("signup_end_date")).sendKeys("17/03/2017");
 
         //Last purchase date
-        element(by.id("last_purchase_start_date")).sendKeys("11/03/2017");
-        element(by.id("last_purchase_end_date")).sendKeys("17/03/2017");
+        element(by.id("last_purchase_start_date")).sendKeys("28/02/2017");
+        element(by.id("last_purchase_end_date")).sendKeys("07/04/2017");
 
         //Platforms - checking the Webapp checkbox
         element(by.id("ext-gen339")).click();

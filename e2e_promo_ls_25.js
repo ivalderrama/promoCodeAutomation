@@ -69,11 +69,11 @@ describe("Liv-25. Putting it all together to see its behaviour in combination, a
 
         //Subscription date
         element(by.id("signup_start_date")).sendKeys("11/03/2017");
-        element(by.id("signup_end_date")).sendKeys("13/03/2017");
+        element(by.id("signup_end_date")).sendKeys("07/04/2017");
 
         //Last purchase date
         element(by.id("last_purchase_start_date")).sendKeys("11/03/2017");
-        element(by.id("last_purchase_end_date")).sendKeys("13/03/2017");
+        element(by.id("last_purchase_end_date")).sendKeys("07/04/2017");
 
         //Platforms - checking the Webapp checkbox
         element(by.id("ext-gen339")).click();
@@ -163,7 +163,7 @@ describe("Liv-25. Putting it all together to see its behaviour in combination, a
         //Login
         browser.get(config.liv_home_url);
         browser.sleep(1000);
-        element(by.css('body > div.modal.fade.in > div > div > div > div.modal-footer > div > div.col-xs-12.col-sm-6.skip-ctrl > span')).click();
+        $('body').sendKeys(protractor.Key.ESCAPE);
         browser.sleep(1000);
         element(by.className('icon-person')).click();
         element(by.name('email')).sendKeys(config.user02);

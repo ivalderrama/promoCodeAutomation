@@ -69,7 +69,7 @@ describe("Wow-20. Promocode is dependent on user total purchase value, where use
 
         //Total purchase value
         element(by.id("total_purchase_value_gt")).sendKeys("5");
-        element(by.id("total_purchase_value_lt")).sendKeys("10");
+        element(by.id("total_purchase_value_lt")).sendKeys("25");
 
         //Save
         element(by.id("ext-gen88")).click();

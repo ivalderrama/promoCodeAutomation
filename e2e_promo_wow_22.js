@@ -68,8 +68,8 @@ describe("Wow-22. Promocode is dependent on user last purchase date, where user 
         element(by.id("valid-to")).sendKeys("30/09/2017");
 
         //Last purchase date
-        element(by.id("last_purchase_start_date")).sendKeys("11/03/2017");
-        element(by.id("last_purchase_end_date")).sendKeys("17/03/2017");
+        element(by.id("last_purchase_start_date")).sendKeys("28/02/2017");
+        element(by.id("last_purchase_end_date")).sendKeys("07/04/2017");
 
         //Save
         element(by.id("ext-gen88")).click();
